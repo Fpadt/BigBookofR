@@ -21,6 +21,7 @@ jobs:
             any::rmarkdown
             any::knitr
             any::googlesheets4
+            any::tidyr
             any::dplyr
             any::bookdown
 
