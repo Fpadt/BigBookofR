@@ -1,7 +1,7 @@
 book_filename: "bbor"
 # before_chapter_script: ["script1.R"]
 # after_chapter_script:  ["script2.R"]
-output_dir: "docs"
+# output_dir: "docs"
 clean: [output_dir]
 delete_merged_file: false
 language:
