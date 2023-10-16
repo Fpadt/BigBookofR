@@ -1,1 +1,0 @@
-Sitemap: https://Fpadt.github.io/BigBookofR/sitemap.xml
