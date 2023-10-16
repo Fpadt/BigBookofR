@@ -1,0 +1,437 @@
+---
+title: "Big Book of R"
+author: "Oscar Baruffa"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  bookdown::gitbook:
+    includes:
+      in_header: [plausible-analytics.html, social.html]
+      after_body: footer.html
+    config:
+      search:
+        engine: fuse
+        options: null
+      edit: https://github.com/oscarbaruffa/BigBookofR/edit/main/%s
+      toc:
+        before: |  
+          <br/><center><b><a href="./index.html">&nbsp&nbspBig Book of R</a></b></center></li>
+        after: |
+          <li><center><a href="https://bookdown.org/yihui/bookdown/">
+          Published with bookdown</a></center></li>
+site: bookdown::bookdown_site
+---
+
+
+
+
+# Welcome :)
+
+## Your last-ever bookmark
+Thanks for stopping by. If you're like me, you can't help but bookmark every R-related programming book you find in the hopes that one day you, or someone you know, might find it useful.
+
+Hopefully this is the only bookmark you'll need in future ;).
+
+When I initially released this collection in late August 2020, it contained about 100 books that I'd been collecting over the previous two years. Since then I've found a few more and there have been contributions from many people. The collection now stands at over 300 books. 
+
+
+Most of these are free. Some are paid but usually quite affordable.
+
+
+## Searching
+
+If there's something specific you're looking for, use the menu or search using the magnifying glass icon at the top of the screen.
+
+
+## Supporting
+
+If you'd like to show your appreciation with a donation you're most welcome to do so here: 
+
+<a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+## Contributing
+
+Please feel free to contribute paid and free books - see [GitHub.](https://github.com/oscarbaruffa/BigBookofR)
+
+
+## Contributors
+
+If you've contributed, add your name and Twitter / blog link below!
+
+[Oscar Baruffa](https://twitter.com/OscarBaruffa), Mohit Sharma, [Vebash Naidoo](https://twitter.com/Sciencificity), [Julia Silge](https://twitter.com/juliasilge), [Erik Gahner Larsen](https://twitter.com/erikgahner), [Nicole Radziwill](https://radziwill.cc), [Nistara Randhawa](https://twitter.com/nistara_r), [Antoine Fabri](https://twitter.com/antoine_fabri), [Jon Calder](https://twitter.com/jonmcalder), [Mike Smith](https://twitter.com/grimbough), [Ben Bolker](https://github.com/bbolker), [Maëlle Salmon](https://twitter.com/ma_salmon), [Laura Ellis](https://twitter.com/LittleMissData), [Bryan Shalloway](https://twitter.com/brshallo), [Antonio Uzal](https://twitter.com/antonio_uzal), [Louis Aslett](http://www.louisaslett.com/), [Lluís Revilla Sancho](https://llrs.dev), [Brendan Cullen](https://twitter.com/_bcullen), [Rami Krispin](https://twitter.com/Rami_Krispin), [Michael Dorman](https://twitter.com/MichaelDorman84), [Ezekiel Adebayo Ogundepo](https://twitter.com/gbganalyst), 
+[Shamsuddeen Hassan Muhammad](https://twitter.com/Shmuhammadd), [Eric Leung](https://twitter.com/erictleung), [Isabella Velásquez](https://twitter.com/ivelasq3), [Matt Roumaya](https://www.mattroumaya.com/), [Legana Fingerhut](https://twitter.com/LeganaFingerhut), [Robert D. Brown III](https://twitter.com/InciteDecisions), [Samrit Pramanik](https://twitter.com/Samrit2442), [Pietro Monticone](https://twitter.com/PietroMonticone), [Adejumo Ridwan Suleiman](https://twitter.com/abuuAishaaa), [Ondrej Pekacek](https://opop999.github.io/)
+
+
+## License
+
+This website/book is free to use, and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/us/){target="blank}.
+
+
+## Live stats
+
+Who says you can't have privacy AND transparency??
+
+I'm guessing that if you're interested in R then you also like data ;).
+
+Note that "unique" visits will be higher in Plausible than you'd find with Google Analytics. Because Plausible is GDPR compliant and privacy focused, each user is identified for only 1 day. If someone visits the site 2 days in a row, that's counted as 2 "uniques" whereas in Google Analytics it would only be counted as 1 unique visitor because of the presence of persistent cookies and such that allows for tracking of users. 
+
+From now on, you can view the **[LIVE site stats right here](https://plausible.io/bigbookofr.com?ref=BigBoofofR)**.
+
+## Discover more books
+
+Follow the [Big Book of R twitter bot](https://twitter.com/BigBookofR) which tweets randomly-selected books from the collection. 
+
+## About me
+
+I'm Oscar. If you like this book, feel free to say "Hi!" on [Twitter](https://twitter.com/OscarBaruffa). 
+
+If you want to stay in the loop on other data-related products I create, or major updates to this book, sign up to my [newsletter](https://oscarbaruffa.com/newsletter?utm_source=BigBookofR_index&utm_content=Link).
+
+
+
+
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# New to R? Start here
+
+If you're new to R and want to learn how to use it, this library might be a little daunting.
+
+> There's so much choice! 
+
+If you aren't sure where  to start, then try one  of these options:
+
+### Book: R for Data Science
+
+This book is an excellent introduction to R programming and gets you started with visualizing data so you see some exciting stuff, and the power of R, right away. 
+
+The book is free to read at https://r4ds.hadley.nz/
+
+There's an accompanying exercise solution book at https://jrnold.github.io/r4ds-exercise-solutions/
+
+
+
+### Video Course: Getting started with R
+
+If you prefer video instruction with progress tracking, check out this course from "R for the Rest of Us" called Getting Started with R.
+
+https://rfortherestofus.com/courses/getting-started/
+
+
+### Watch a data analyst code live
+
+If you’re looking for real-world examples of live data analyses, you’ve come to the right place.
+
+David Robinson, a highly experienced Data Scientist, has recorded many screencasts where he analyses data that he’s never seen before. These are fantastic examples of how to think about approaching an analysis. You couldn’t ask for a better mentor!
+
+All analyses are done in R with over 80 hours of screencasts timestamped and annotated with detailed info. 
+
+https://www.rscreencasts.com/ 
+
+
+### Posit Primers
+
+If you prefer  step by step instructions in an interactive online environment, then have a look at the Posit Primers which will take you through very very basic of data wrangling through to an introduction to building web apps with R!
+
+https://posit.cloud/learn/primers
+
+<!--chapter:end:010-start_here.Rmd-->
+
+# Book Clubs
+
+Just like the book clubs you know and love, except that people actually talk about the book they're busy reading!
+
+R book clubs are usually a group of people who follow along together in working though the same book, with some sort of periodic check-in (often weekly, often via video) discussing the text, exercises and solutions. 
+
+Below is a list of book clubs. These usually have a specific start and end date, so it may happen that a book club has already ended even though it's listed here.
+
+If you are running a book club, feel free to add it. 
+
+## NHS-R community
+
+If you're one of the estimated 10 000 data analysts working in the NHS or someone who works closely with the NHS or health data, here's a [blog post](https://nhsrcommunity.com/blog/nhs-r-book-club/) introducing the NHS-R Community book club. The book club is coordinated through the [NHS-R Slack Group](https://nhsrcommunity.slack.com/) and the specific channel is #book-club. Certain email addresses can just join the Slack group (like @nhs.net) but if you have an email address that needs approval please contact NHS-R Community through their contact details on the [website](https://nhsrcommunity.com/contact/). The book club has covered statistics books like The Art of Statistics by David Spiegelhalter and The Book of Why by Judea Pearl and presentations given at the meetings can be found on the [GitHub repository](https://github.com/nhs-r-community/book_group).
+
+The Community will be coordinating another book club for the R4DS book and the channel for that is #r4ds-book-club.
+
+
+## R4DS Slack Community
+
+The [R4Ds slack Community](http://r4ds.io/join) has a number of running book clubs. Once you've joined the slack group, you can search for channels. 
+
+They also have a channel specifically for book club facilitators!
+
+They've [recorded the sessions](https://www.youtube.com/c/R4DSOnlineLearningCommunity/playlists) of cohorts so you can pick your way through one, or catch up on the current one! 
+
+## R-ladies Netherlands - Advanced R by Hadley Wickham
+
+A collaboration of multiple Netherlands-based R-ladies groups ran a club on Hadley Wickham's Advanced R book. 
+
+The [github repo](https://github.com/rladiesnl/book_club) contains all the slides from the sessions.
+
+
+
+
+
+
+
+<!--chapter:end:015-book_clubs.rmd-->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load packages, include=FALSE}
+# Load packages -----------------------------------------------------------
+
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(googlesheets4)
+
+```
+
+
+
+
+```{r load data, include=FALSE}
+# Load data ---------------------------------------------------------------
+
+
+#This is a publicly accessible sheet, therefore no need to googlesheets4 authorisation
+
+gs4_deauth()
+
+books_source <- read_sheet("https://docs.google.com/spreadsheets/d/1vufdtrIzF5wbkWZUG_HGIBAXpT1C4joPx2qTh5aYzDg",sheet = "books")
+chapter_info <- read_sheet("https://docs.google.com/spreadsheets/d/1vufdtrIzF5wbkWZUG_HGIBAXpT1C4joPx2qTh5aYzDg/edit#gid=477753205", sheet="chapter_info")
+```
+
+
+```{r arrange books, include=FALSE}
+
+books_source <-  books_source %>% 
+  
+  # titles that are in multiple chapters are duplictaed into each
+  separate_rows(chapters, sep = ";") %>% 
+  
+  #  A leading space might be easily created if comma seperation is done, so this removes it
+  mutate(chapters = str_trim(chapters, side = "both")) %>% 
+  
+  # Arrange titles alphabetically within their chapter
+  
+  group_by(chapters) %>% 
+  arrange(title, .by_group = TRUE) %>% 
+  ungroup() %>% 
+  
+  # Delete any empty rows (could occur if an entry is deleted form the google sheet)
+  filter_all(any_vars(!is.na(.)))  
+
+```
+
+
+
+```{r include=FALSE}
+# TO DO -----------------------------------------------------
+
+# save data to an rda file
+
+#Refactor authors to simpler loop
+```
+
+
+
+```{r include=FALSE}
+# Create book content -----------------------------------------------------
+
+
+chapters <- books_source %>% 
+  select(chapters) %>%
+  
+  distinct(chapters) %>% 
+  pull() 
+
+
+# Re-arrange "Career and Community" to be the first chapter and "Other compendiums" to be the last. 
+first <-  chapters[match("Career and Community", chapters)]
+last <-  chapters[match("Other compendiums", chapters)]
+
+chapters <- chapters[chapters!=first]
+chapters <- chapters[chapters!=last]
+
+chapters <-  c(first, chapters)
+chapters <-  c(chapters, last)
+
+```
+
+
+
+
+```{r content_loop, echo=FALSE, , results='asis'}
+
+
+for (chapter in chapters) {
+  cat('\n\n#', chapter, '\n\n')
+ 
+ 
+  
+if (chapter %in% chapter_info$chapters) {
+  
+  chapter_intro <- chapter_info %>% 
+   filter(chapters == chapter) %>% 
+   select(introduction) %>% 
+   pull()
+  
+  cat('\n\n', as.character(chapter_intro), '\n\n', sep="")
+    
+}  
+  
+chapter_content <- books_source %>% 
+     filter(chapters == chapter)
+
+  for (entry in row.names(chapter_content)) {
+    
+    
+    #Printing Authors - bit tricky to account for if data is availabel or not, and if a link is availabel or not. 
+    # TODO: Refactor to simpler loop
+    
+    cat('\n\n## ', as.character(chapter_content[entry, 'title']), '\n\n', sep="")
+    
+    #First author
+    if (!is.na(chapter_content[entry, 'author1'])) {
+      
+      if (!is.na(chapter_content[entry, 'bio1'])) {
+        cat('by [', as.character(chapter_content[entry, 'author1']),']', sep="")
+      } else {
+      cat('by ', as.character(chapter_content[entry, 'author1']), sep="")
+      }
+    }
+    
+      
+     if (!is.na(chapter_content[entry, 'bio1'])) {
+      cat('(', as.character(chapter_content[entry, 'bio1']),')', sep="")
+     } #end of first author
+    
+    
+    #Second author
+    if (!is.na(chapter_content[entry, 'author2'])) {
+      
+      if (!is.na(chapter_content[entry, 'bio2'])) {
+        cat(', [', as.character(chapter_content[entry, 'author2']),']', sep="")
+      } else {
+      cat(', ', as.character(chapter_content[entry, 'author2']), sep="")
+      }
+    }
+    
+      
+     if (!is.na(chapter_content[entry, 'bio2'])) {
+      cat('(', as.character(chapter_content[entry, 'bio2']),')', sep="")
+    } #end second author
+    
+    
+    
+    #Third author
+    if (!is.na(chapter_content[entry, 'author3'])) {
+      
+      if (!is.na(chapter_content[entry, 'bio3'])) {
+        cat(', [', as.character(chapter_content[entry, 'author3']),']', sep="")
+      } else {
+      cat(', ', as.character(chapter_content[entry, 'author3']), sep="")
+      }
+    }
+    
+      
+     if (!is.na(chapter_content[entry, 'bio3'])) {
+      cat('(', as.character(chapter_content[entry, 'bio3']),')', sep="")
+    } #end third author
+    
+    
+    #Fourth author
+    if (!is.na(chapter_content[entry, 'author4'])) {
+      
+      if (!is.na(chapter_content[entry, 'bio4'])) {
+        cat(', [', as.character(chapter_content[entry, 'author4']),']', sep="")
+      } else {
+      cat(', ', as.character(chapter_content[entry, 'author4']), sep="")
+      }
+    }
+    
+      
+     if (!is.na(chapter_content[entry, 'bio4'])) {
+      cat('(', as.character(chapter_content[entry, 'bio4']),')', sep="")
+    } #end fourth author
+    
+    
+    #fifth author
+    if (!is.na(chapter_content[entry, 'author5'])) {
+      
+      if (!is.na(chapter_content[entry, 'bio5'])) {
+        cat(', [', as.character(chapter_content[entry, 'author5']),']', sep="")
+      } else {
+      cat(', ', as.character(chapter_content[entry, 'author5']), sep="")
+      }
+    }
+    
+      
+     if (!is.na(chapter_content[entry, 'bio5'])) {
+      cat('(', as.character(chapter_content[entry, 'bio5']),')', sep="")
+    } #end fifth author
+    
+    #Sixth author
+    if (!is.na(chapter_content[entry, 'author6'])) {
+      
+      if (!is.na(chapter_content[entry, 'bio6'])) {
+        cat(', [', as.character(chapter_content[entry, 'author6']),']', sep="")
+      } else {
+      cat(', ', as.character(chapter_content[entry, 'author6']), sep="")
+      }
+    }
+    
+      
+     if (!is.na(chapter_content[entry, 'bio6'])) {
+      cat('(', as.character(chapter_content[entry, 'bio6']),')', sep="")
+    } #end sixth author
+    
+    
+    
+      
+  if (!is.na(chapter_content[entry, 'description'])) {
+    cat('\n\n', as.character(chapter_content[entry, 'description']),'\n\n', sep="")   
+  }
+  
+     
+  #Combinations of paid description and dollar amount  
+  
+    if (!is.na(chapter_content[entry, 'paid']) & !is.na(chapter_content[entry, 'amount_usd']) ) {
+      cat('\n\nPaid: ', as.character(chapter_content[entry, 'paid']), " $", as.character(chapter_content[entry, 'amount_usd']), sep="") 
+    }
+    
+    if (is.na(chapter_content[entry, 'paid']) & !is.na(chapter_content[entry, 'amount_usd']) ) {
+      cat('\n\nPaid: ', "$", as.character(chapter_content[entry, 'amount_usd']), sep="") 
+    }
+    
+    if (!is.na(chapter_content[entry, 'paid']) & is.na(chapter_content[entry, 'amount_usd']) ) {
+      cat('\n\nPaid: ', as.character(chapter_content[entry, 'paid']), sep="") 
+    }
+    
+    
+  # end paid info
+    
+    
+  if (!is.na(chapter_content[entry, 'link'])) {
+    cat('\n\nLink: ', as.character(chapter_content[entry, 'link']),'\n\n', sep="")   
+  }
+    
+    
+  } #end chapter for loop
+    
+    
+  }
+
+
+```
+
+
+
+
+<!--chapter:end:020-book_list.Rmd-->
+
