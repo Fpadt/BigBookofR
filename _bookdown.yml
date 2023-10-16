@@ -1,0 +1,23 @@
+book_filename: "bbor"
+# before_chapter_script: ["script1.R"]
+# after_chapter_script:  ["script2.R"]
+output_dir: "docs"
+clean: [output_dir]
+delete_merged_file: false
+language:
+  label:
+    fig: "FIGURE "
+    tab: "TABLE "
+  ui:
+    edit: "Edit"
+    chapter_name: ""
+rmd_subdir: true
+new_session: false # in order to first merge and next Knit M-K approach
+clean_envir: true
+
+#rmd_files: [
+#  "index.Rmd",
+  # Group
+#  "txt/1000-MasterData.Rmd",
+#  "txt/1010-GG1_G1MDCP30_Q001.Rmd"
+#]

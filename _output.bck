@@ -1,0 +1,69 @@
+bookdown::gitbook:
+  dev: svglite
+  split_by: chapter
+  highlight: tango
+  includes:
+    in_header: "https://report.grandvision.com/bi-doc/img/no_cache.html"
+  include:
+    before_body: "https://report.grandvision.com/bi-doc/img/header.html"
+   #after_body: src/footer.html
+  css: ['https://report.grandvision.com/bi-doc/img/css/style.css',
+        'https://report.grandvision.com/bi-doc/img/css/toc.css',
+        'https://report.grandvision.com/bi-doc/img/css/block.css'
+        ]
+  lib_dir: assets
+  config:
+    toolbar:
+      position: fixed
+    toc_depth: 3
+    toc:
+      collapse: section # subsection, section, none
+      scroll_highlight: yes
+      before: |
+        <li><a href="https://teams.microsoft.com/l/channel/19%3af7516a4bfd0849eeb9b27345982e6585%40thread.skype/General?groupId=6c5cc987-b92f-49a1-8982-94a7ae7b7a24&tenantId=80525e01-c1a1-4824-9b24-acd53a540aa8" target="blank">Discuss on Teams GBI </a></li>
+      after: |
+        <li><a href="https://www.grandvision.com/terms-and-conditions" target="blank"> terms & conditions</a></li>
+    download: null #["pdf"] #[pdf, epub] #mobi]
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+    search:
+      engine: fuse #lunr # or fuse https://opensourcelibs.com/lib/lunr-module
+      # options to control/tune search engine behavior (for
+      # fuse.js, refer to https://fusejs.io/api/options.html)
+      options:
+        isCaseSensitive: false
+        ignoreLocation: true
+        # threshold: 0.0
+        # distance: 0
+    edit: https://bitbucket.grandvision.global/projects/ISBD/repos/isqy/browse/%s
+    sharing:
+      github:    no
+      facebook:  no
+      twitter:   no
+      linkedin:  no
+      google:    no
+      weibo:     no
+      instapper: no
+      vk:        no
+      whatsapp:  no
+      all:       []
+    info: true
+#bookdown::pdf_book:
+#  includes:
+#    in_header: 'https://report.grandvision.com/bi-doc/img/css/preamble.tex'
+ #    before_body: latex/before_body.tex
+ #    after_body: latex/after_body.tex
+#  keep_tex: yes
+ #  dev: "cairo_pdf"
+#  latex_engine: xelatex
+#  citation_package: natbib
+#  extra_dependencies: awesomebox
+ #  template: null
+ #  pandoc_args: --top-level-division=chapter
+ #  toc_depth: 3
+ #  toc_unnumbered: no
+ #  toc_appendix: yes
+ #  quote_footer: ["\\VA{", "}{}"]
+ # bookdown::epub_book: default
